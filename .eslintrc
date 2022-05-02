@@ -1,0 +1,84 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 10
+  },
+  "rules": {
+    "linebreak-style": "off",
+    "no-unused-vars": [
+      "error",
+      {
+        "vars": "all",
+        "args": "after-used",
+        "ignoreRestSiblings": false
+      }
+    ],
+    "spaced-comment": [
+      "error",
+      "always",
+      {
+        "exceptions": [
+          "-",
+          "+"
+        ]
+      }
+    ],
+    "arrow-parens": [
+      "error",
+      "as-needed"
+    ],
+    "operator-linebreak": "off",
+    "valid-jsdoc": "off",
+    "quote-props": "off",
+    "require-jsdoc": "off",
+    "object-curly-spacing": "off",
+    "max-len": "off",
+    "new-cap": "off",
+    "quotes": "off",
+    "no-invalid-this": "off",
+    "no-use-before-define": [
+      "error",
+      {
+        "functions": true,
+        "classes": true,
+        "variables": true
+      }
+    ],
+    "semi": "off",
+    "comma-dangle": "off",
+    "key-spacing": [
+      "error",
+      {
+        "afterColon": true
+      }
+    ],
+    "space-before-function-paren": "off",
+    "array-bracket-spacing": [
+      "error",
+      "never"
+    ],
+    "no-extra-semi": "off",
+    "indent": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "none",
+        "singleQuote": true,
+        "tabWidth": 2,
+        "printWidth": 100,
+        "semi": false,
+        "arrowParens": "avoid",
+        "spacedComment": false,
+        "endOfLine": "auto"
+      }
+    ]
+  },
+  "extends": [
+    "prettier",
+    "google"
+  ],
+  "plugins": [
+    "prettier",
+    "json",
+    "standard"
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "name": "todolist-api",
+  "version": "1.0.0",
+  "description": "A task creation management system for keeping tracks of tasks and when they supposed to be performed",
+  "main": "app.js",
+  "private": false,
+  "scripts": {
+    "dev:win32": "set DEBUG=app,app:* && set NODE_ENV=DEV&& nodemon -r pino-debug src/app.js",
+    "dev": "DEBUG=app,app:* NODE_ENV=DEV nodemon -r pino-debug src/app.js",
+    "start": "NODE_ENV=PROD node src/app.js",
+    "lint": "eslint --fix . --ignore-path .eslintignore",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Whitson Dzimah",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
+    "celebrate": "^15.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "eventemitter3": "^4.0.7",
+    "express": "^4.18.0",
+    "express-handlebars": "^6.0.5",
+    "helmet": "^5.0.2",
+    "hilary": "^5.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "jw-paginate": "^1.0.4",
+    "lodash": "^4.17.21",
+    "mongoose-autopopulate": "^0.16.1",
+    "node-fetch": "^2.6.1",
+    "pino-debug": "^2.0.0",
+    "pm2": "^5.2.0",
+    "query-string": "^7.1.1",
+    "redis": "^4.0.6",
+    "swagger-ui-express": "^4.3.0",
+    "typy": "^3.3.0",
+    "log4js": "^6.4.6",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.16"
+  },
+  "devDependencies": {
+    "eslint": "^8.14.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-prettier-standard": "^4.0.1",
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-standard": "^5.0.0",
+    "log4js": "^6.4.6",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.16",
+    "prettier": "^2.6.2",
+    "standard": "^17.0.0",
+    "standardjs": "^1.0.0-alpha"
+  },
+  "nodemonConfig": {
+    "restartable": "rs",
+    "ignore": [
+      "node_modules/**/node_modules",
+      "tests/**/*.js"
+    ],
+    "delay": "2500"
+  },
+  "standard": {
+    "env": {
+      "mocha": true
+    }
+  }
+}
